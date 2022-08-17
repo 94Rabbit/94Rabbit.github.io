@@ -1,69 +1,75 @@
 {
   "accessors": [
     {
-      "componentType": 5125,
-      "count": 110286,
-      "type": "SCALAR"
-    },
-    {
+      "bufferView": 2,
       "componentType": 5126,
       "count": 22643,
       "max": [
-        1.0078430014498094,
-        1.0078706580049852,
-        1.00793175276588
+        1.6394920349121094,
+        1.8488810062408447,
+        4.091454982757568
       ],
       "min": [
-        -1.0078390079386095,
-        -1.0078113513834337,
-        -1.007750256622539
+        -1.6394920349121094,
+        -1.8488810062408447,
+        -4.091454982757568
       ],
       "type": "VEC3"
     },
     {
+      "bufferView": 2,
+      "byteOffset": 271716,
       "componentType": 5126,
       "count": 22643,
       "max": [
-        1.6424664808123297,
-        1.8528164183155873,
-        4.095452496175016
+        0.9999998807907104,
+        0.999988853931427,
+        0.9996559023857117
       ],
       "min": [
-        -1.6434895483295568,
-        -1.8528785196582922,
-        -4.095452496175016
+        -0.9999958872795105,
+        -0.9999682307243347,
+        -0.9999071359634399
       ],
       "type": "VEC3"
     },
     {
+      "bufferView": 3,
       "componentType": 5126,
       "count": 22643,
       "max": [
-        1.0078469519521676,
-        1.0079040532018624,
-        1.0081064109708748,
-        1.007843137254902
+        0.9993368983268738,
+        0.9999523758888245,
+        0.9999931454658508,
+        1.0
       ],
       "min": [
-        -1.0078393225576363,
-        -1.0077822213079415,
-        -1.007579863538929,
-        -1.007843137254902
+        -0.9999961853027344,
+        -0.9999390840530396,
+        -0.9997367262840271,
+        -1.0
       ],
       "type": "VEC4"
     },
     {
+      "bufferView": 1,
       "componentType": 5126,
       "count": 22643,
       "max": [
-        1.0003663306069885,
-        1.0003663306069885
+        0.9993900060653687,
+        0.9993900060653687
       ],
       "min": [
-        -0.0003663245533918006,
-        -0.0003663245533918006
+        0.0006099999882280827,
+        0.0006099999882280827
       ],
       "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 110286,
+      "type": "SCALAR"
     }
   ],
   "asset": {
@@ -79,40 +85,58 @@
   "bufferViews": [
     {
       "buffer": 0,
-      "byteOffset": 0,
-      "byteLength": 437286
+      "byteLength": 441144,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 181144,
+      "byteOffset": 441144,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 543432,
+      "byteOffset": 622288,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 362288,
+      "byteOffset": 1165720,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
     }
   ],
   "buffers": [
     {
-      "name": "scene-processed",
-      "byteLength": 437288,
+      "byteLength": 1528008,
       "uri": "scene.bin"
     }
   ],
   "extensionsRequired": [
-    "KHR_materials_pbrSpecularGlossiness",
-    "KHR_draco_mesh_compression"
+    "KHR_materials_pbrSpecularGlossiness"
   ],
   "extensionsUsed": [
-    "KHR_materials_pbrSpecularGlossiness",
-    "KHR_draco_mesh_compression"
+    "KHR_materials_pbrSpecularGlossiness"
   ],
   "images": [
     {
-      "name": "material_0_diffuse",
       "uri": "textures/material_0_diffuse.jpeg"
     },
     {
-      "name": "material_0_specularGlossiness",
       "uri": "textures/material_0_specularGlossiness.png"
     },
     {
-      "name": "material_0_normal",
       "uri": "textures/material_0_normal.jpeg"
     },
     {
-      "name": "material_0_occlusion",
       "uri": "textures/material_0_occlusion.png"
     }
   ],
@@ -122,43 +146,34 @@
       "extensions": {
         "KHR_materials_pbrSpecularGlossiness": {
           "diffuseFactor": [
-            1,
-            1,
-            1,
-            1
+            1.0,
+            1.0,
+            1.0,
+            1.0
           ],
           "diffuseTexture": {
             "index": 0
           },
-          "glossinessFactor": 1,
+          "glossinessFactor": 1.0,
           "specularFactor": [
-            0,
-            0,
-            0
+            0.0,
+            0.0,
+            0.0
           ],
           "specularGlossinessTexture": {
-            "index": 1,
-            "texCoord": 0
+            "index": 1
           }
         }
       },
       "name": "material_0",
       "normalTexture": {
         "index": 2,
-        "scale": 0.8597560976,
-        "texCoord": 0
+        "scale": 0.8597560976
       },
       "occlusionTexture": {
         "index": 3,
-        "strength": 0.85,
-        "texCoord": 0
-      },
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "alphaMode": "OPAQUE"
+        "strength": 0.85
+      }
     }
   ],
   "meshes": [
@@ -168,24 +183,13 @@
         {
           "attributes": {
             "NORMAL": 1,
-            "POSITION": 2,
-            "TANGENT": 3,
-            "TEXCOORD_0": 4
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
           },
-          "indices": 0,
+          "indices": 4,
           "material": 0,
-          "mode": 4,
-          "extensions": {
-            "KHR_draco_mesh_compression": {
-              "bufferView": 0,
-              "attributes": {
-                "NORMAL": 0,
-                "POSITION": 1,
-                "TANGENT": 2,
-                "TEXCOORD_0": 3
-              }
-            }
-          }
+          "mode": 4
         }
       ]
     }
@@ -196,22 +200,22 @@
         1
       ],
       "matrix": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        -1,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
         -2.220446049250313e-16,
-        0,
-        0,
+        0.0,
+        0.0,
         2.220446049250313e-16,
-        -1,
-        0,
-        0,
-        -5.960000066806977e-7,
-        0.000003457100092418841,
-        1
+        -1.0,
+        0.0,
+        0.0,
+        -5.960000066806977e-07,
+        3.457100092418841e-06,
+        1.0
       ],
       "name": "Sketchfab_model"
     },
